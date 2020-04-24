@@ -50,6 +50,7 @@ self.addEventListener("activate", event => {
 });
 
 self.addEventListener("fetch", event => {
+  
   // non GET requests are not cached and requests to other origins are not cached
   if (
     event.request.method !== "GET" ||
